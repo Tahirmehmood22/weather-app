@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Weather App</title>
+	<script defer src="main.js"></script></head>
+	<body>
+		<div class="main-container">
+			<div class="lds-roller">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<div class="fields-container">
+				<div class="logo-wrapper">
+					<a
+						href="https://github.com/Ljoskold/weather-app.git"
+						id="logo"
+						>Weather App
+						<img src="./images/logo3.png" alt="logo" id="logo-img"
+					/></a>
+				</div>
+				<div class="field search-field">
+					<div class="search-wrapper">
+						<input
+							type="text"
+							name="search-bar"
+							id="search-bar"
+							placeholder="Search a location..."
+						/>
+						<button type="button" id="geolocation-button">
+							<img src="./images/target.png" alt="" />
+						</button>
+					</div>
+					<div class="location-options">
+						<button></button>
+					</div>
+				</div>
+				<div class="field current-field">
+					<div class="video-container">
+						<video autoplay loop muted id="video">
+							<source src="" type="video/mp4" />
+							Your browser does not support the video tag.
+						</video>
+					</div>
+					<h1 id="current-field-name"></h1>
+					<p id="current-field-country"></p>
+					<p id="current-field-temp"></p>
+					<p id="current-field-text"></p>
+				</div>
+				<div class="field forecast-field">
+					<h3 id="forecast-header">3 Days Forecast</h3>
+					<div class="day">
+						<p class="days">Today</p>
+						<img src="" alt="" id="day1-img" />
+						<p id="day1-text"></p>
+						<p id="day1-temp"></p>
+					</div>
+					<div class="day">
+						<p class="days">Tomorrow</p>
+						<img src="" alt="" id="day2-img" />
+						<p id="day2-text"></p>
+						<p id="day2-temp"></p>
+					</div>
+					<div class="day">
+						<p class="days">After tomorrow</p>
+						<img src="" alt="" id="day3-img" />
+						<p id="day3-text"></p>
+						<p id="day3-temp"></p>
+					</div>
+				</div>
+				<div class="field details-field">
+					<div class="wrapper">
+						<span class="lable" id="feels-like-lable"
+							>Feels like</span
+						>
+						<span class="info" id="feels-like"></span>
+					</div>
+					<div class="wrapper">
+						<span class="lable" id="uv-lable">UV</span>
+						<span class="info" id="uv"></span>
+					</div>
+					<div class="wrapper">
+						<span class="lable" id="humidity-lable">Humidity</span>
+						<span class="info" id="humidity"></span>
+					</div>
+					<div class="wrapper">
+						<span class="lable" id="wind-lable">Wind</span>
+						<span class="info" id="wind"></span>
+					</div>
+				</div>
+				<div class="field additional-field">
+					<div class="wrapper">
+						<span class="lable" id="rain-lable"
+							>Chance of rain</span
+						>
+						<span class="info" id="rain"></span>
+					</div>
+					<div class="wrapper">
+						<span class="lable" id="pressure-lable">Pressure</span>
+						<span class="info" id="pressure"></span>
+					</div>
+					<div class="wrapper">
+						<span class="lable" id="visibility-lable"
+							>Visibility</span
+						>
+						<span class="info" id="visibility"></span>
+					</div>
+					<div class="wrapper">
+						<span class="lable" id="sunrise-lable">Sunrise</span>
+						<span class="info" id="sunrise"></span>
+					</div>
+					<div class="wrapper">
+						<span class="lable" id="sunset-lable">Sunset</span>
+						<span class="info" id="sunset"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

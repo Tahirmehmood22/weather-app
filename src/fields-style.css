@@ -1,0 +1,188 @@
+/* ///////////////////current-field///////////////////// */
+#current-field-name {
+	font-size: 2.5rem;
+	color: rgb(226, 226, 226);
+	text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.395);
+	position: absolute;
+	top: 90px;
+}
+#current-field-country {
+	font-size: 1.5rem;
+	color: rgb(197, 197, 197);
+	position: absolute;
+	top: 140px;
+}
+#current-field-temp {
+	font-size: 5.5rem;
+	font-weight: bold;
+	color: rgb(250, 250, 250);
+	position: absolute;
+	top: 180px;
+	text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.395);
+}
+#current-field-text {
+	margin-top: 30px;
+	font-size: 2.5rem;
+	color: #68c9be;
+	position: absolute;
+	top: 350px;
+}
+/* ////////////////////forecast-field//////////////// */
+#forecast-header {
+	grid-column: 1/4;
+	grid-row: 1/2;
+	color: rgb(38, 38, 38);
+	font-size: 1.5rem;
+	margin: 20px 0 0 0;
+}
+.day img {
+	width: 64px;
+	height: 64px;
+}
+.day {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.days {
+	font-size: 1.2rem;
+	font-weight: 550;
+	color: rgb(38, 38, 38);
+}
+#lowest,
+#average,
+#highest {
+	border-radius: 5px;
+}
+#lowest {
+	color: rgb(149, 228, 255);
+}
+#average {
+	font-size: 1.2rem;
+	color: rgb(249, 249, 111);
+}
+#highest {
+	color: rgb(255, 192, 75);
+}
+#day1-text,
+#day2-text,
+#day3-text {
+	color: #a9c7c3;
+	font-size: 1.1rem;
+}
+/* ////////////////////information/////////////////// */
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.info {
+	color: white;
+	font-size: 1.8rem;
+	padding-left: 40px;
+	font-weight: bolder;
+	letter-spacing: 2px;
+}
+.info .main-info {
+	color: black;
+}
+.lable {
+	font-size: 1.3rem;
+	color: #e6e6e6;
+	letter-spacing: 1px;
+}
+#feels-like-lable::before {
+	content: url(./icons/wi-thermometer.svg);
+	vertical-align: middle;
+}
+#uv-lable::before {
+	content: url(./icons/wi-day-sunny.svg);
+	vertical-align: middle;
+}
+#humidity-lable::before {
+	content: url(./icons/wi-humidity.svg);
+	vertical-align: middle;
+}
+#wind-lable::before {
+	content: url(./icons/wi-strong-wind.svg);
+	vertical-align: middle;
+}
+#rain-lable::before {
+	content: url(./icons/wi-raindrops.svg);
+	vertical-align: middle;
+}
+#pressure-lable::before {
+	content: url(./icons/wi-barometer.svg);
+	vertical-align: middle;
+}
+#visibility-lable::before {
+	content: url(./icons/visibility.svg);
+	vertical-align: middle;
+	width: 50px;
+	height: 50px;
+}
+#sunrise-lable::before {
+	content: url(./icons/wi-sunrise.svg);
+	vertical-align: middle;
+}
+#sunset-lable::before {
+	content: url(./icons/wi-sunset.svg);
+	vertical-align: middle;
+}
+/* /////////////////////searchbar/////////////////// */
+#geolocation-button {
+	object-fit: contain;
+	width: 30px;
+	height: 30px;
+	border-radius: 50px;
+	cursor: pointer;
+	border: none;
+	padding: 0;
+	background: none;
+}
+#geolocation-button img {
+	width: 100%;
+	height: 100%;
+	object-fit: inherit;
+	border-radius: 50%;
+}
+input[type='text'] {
+	width: 70%;
+	height: 30px;
+	border: none;
+	background: none;
+	outline: none;
+	font-size: 1.3rem;
+	padding-left: 25px;
+	background-image: url(./icons/search.svg);
+	background-repeat: no-repeat;
+	background-position: left center;
+	color: rgb(224, 224, 224);
+}
+input[type='text']::placeholder {
+	color: rgb(44, 44, 44);
+}
+/* /////////////////////Logo//////////////////// */
+.logo-wrapper {
+	justify-self: end;
+	align-self: center;
+}
+#logo {
+	font-size: 3rem;
+	color: black;
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.311);
+	text-decoration: none;
+	grid-row: 1/2;
+	grid-column: 3/4;
+}
+
+#logo:hover {
+	filter: invert(1);
+}
+#logo-img {
+	width: 40px;
+	height: 40px;
+	vertical-align: middle;
+	color: white;
+}
